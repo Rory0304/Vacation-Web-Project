@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function test(){
+			alert("hey");
+		}
+
+		function test2(x){
+			alert(x);
+			var y = 2;
+			alert(y);
+			var z = 3;
+			alert(z);
+		}
+
+		function test3(){
+			let names = ["name1","name2","name3"];
+			document.getElementById("mytext").innerHTML = names;
+		}
+		
+	</script>
+</head>
+<body>
+	<div id="mytext"></div>
+	<button onclick="test()">javascript button1</button>
+	<button onclick="test2(1)">javascript button2</button>
+	<button onclick="test3()">javascript button3</button>
+</body>
+</html>
+
+<!-- 버튼을 실행시키는 좋은 방법 = onchange와 onclick의 차이는?-->
+<!-- javascript에서 undefined와 null, none의 차이점 -->
+<!-- var과 let의 차이점 -->

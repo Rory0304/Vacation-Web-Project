@@ -1,0 +1,35 @@
+.profile{
+	border: solid black 2px;
+	border-radius: 20px;
+	width: 500px;
+	height: 600px;
+
+}
+
+.imgbox{
+	text-align: center;
+}
+
+.textbox{
+	padding: 2px;
+	height: 50px;
+	margin: 10px;
+}
+
+.textbox :hover{
+	color: white;
+}
+
+#textbox1{
+	background-color:#045FB4;
+	/*color: white;*/
+}
+
+#textbox2{
+	background-color: #F8E0F1;
+}
+
+#textbox3{
+	background-color: #F2F5A9;
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 100px;
+			background-color: green;
+			margin-top : 10px;
+			margin-bottom : 10px;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$("#show").click(function(){
+				$("p").show();
+			});
+			$("#hide").click(function(){
+				$("p").hide();
+			});
+			$("#move").click(function(){
+				$("#box").animate({height:
+					"200px"});
+			});
+			$("#move").click(function(){
+				$("#box").animate({height: "300px"});
+			});
+			$("#text").click(function(){
+				$("#test").append("텍스트 추가");
+			});
+		})
+		</script>
+	</head>
+	<body>
+		<p>hello world!</p>
+		<button id="show">show</button>
+		<button id="hide">hide</button>
+		<div id="box">
+			foo
+		</div>
+		<button id="move">move</button>
+
+		<div id="test">
+		</div>
+		<button id="text">test btn</button>
+	</body>
+	</html>
