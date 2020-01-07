@@ -1,8 +1,8 @@
 .profile{
 	border: solid black 2px;
 	border-radius: 20px;
-	width: 500px;
-	height: 600px;
+	width: 300px;
+	height: 400px;
 
 }
 
@@ -11,15 +11,18 @@
 }
 
 .textbox{
-	padding: 2px;
 	height: 50px;
 	margin: 10px;
+}
+
+.textbox p{
+	float: left;
+	margin-left: 12px;
 }
 
 .textbox :hover{
 	color: white;
 }
-
 #textbox1{
 	background-color:#045FB4;
 	/*color: white;*/
@@ -33,3 +36,25 @@
 	background-color: #F2F5A9;
 }
 
+input{
+	margin-top: 15px;
+	margin-left: 10px;
+}
+
+h1{
+	text-align: center;
+}
+
+#musicli{
+	margin: 5px;
+	display: none;
+}
+
+#movieli{
+	margin: 5px;
+	display: none;
+}
+#sportsli{
+	margin: 5px;
+	display: none;
+}
