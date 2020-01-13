@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../static/index.css" type="text/css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../index.js" type="text/javascript"></script>
+	<title>lab01</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="/hobby"><li>내 취미</li></a>
+            <a href="/friend"><li>내 친구</li></a>
+            <a href="/speciality"><li>내 특기</li></a>
+        </ul>
+    </nav>
+    <h1>My Profile</h1>
+	<div class="imgbox">
+        <img src="{{ url_for('static', filename='image/myimg.png') }}" class="profile">
+	</div>
+
+	<div class="wrapper">
+		<div class="textbox" id="textbox1">
+			<p>좋아하는 음악 장르는?</p>
+		</div>
+
+		<div id="musicli">
+			<ul>
+				<li>Rock</li>
+				<li>Rock</li>
+				<li>Rock</li>
+			</ul>
+			<input type="text" name="music" id="input">
+		</div>
+
+
+		<div class="textbox" id="textbox2">
+			<p>좋아하는 영화 장르는?</p>
+		</div>
+		
+		<div id="movieli">
+			<ul>
+				<li>SF</li>
+				<li>Romance</li>
+			</ul>
+			<input type="text" name="movie" id="input">
+		</div>
+
+
+		<div class="textbox" id="textbox3">
+			<p>좋아하는 스포츠는?</p>
+		</div>
+
+
+		<div id="sportsli">
+			<ul>
+				<li>Tennis</li>
+				<li>Baseball</li>
+			</ul>
+			<input type="text" name="sports" id="input">
+		</div>
+	</div>
+	
+</body>
+</html>
