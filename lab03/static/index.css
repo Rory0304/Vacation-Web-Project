@@ -1,78 +1,81 @@
-nav {
-	height: 50px;
-	width: 100%;
-	margin: 0 auto;
-	padding: 0;
-	background-color: black;
+body {
+  margin: 0;
 }
-nav ul {
-	float: right;
+.header {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
+  position: sticky;
 }
-nav ul li{
-	display: inline-block;
-	vertical-align: auto;
-	margin-right: 20px;
-	list-style-type: none;
-	font-size: large;
-	color: white
+.header ul {
+  float: left;
 }
-.profile{
-	border: solid black 2px;
-	border-radius: 20px;
-	width: 300px;
-	height: 400px;
-
+.header ul li {
+  display: inline-block;
+  vertical-align: auto;
+  margin-right: 20px;
+  list-style-type: none;
+  font-size: large;
+  color: white;
 }
-
-.imgbox{
-	text-align: center;
-}
-
-.textbox{
-	height: 50px;
-	margin: 10px;
+.profile {
+  border: solid black 2px;
+  border-radius: 20px;
+  width: 300px;
+  height: 400px;
 }
 
-.textbox p{
-	float: left;
-	margin-left: 12px;
+.imgbox {
+  text-align: center;
 }
 
-.textbox :hover{
-	color: white;
-}
-#textbox1{
-	background-color:#045FB4;
-	/*color: white;*/
+.textbox {
+  height: 50px;
+  margin: 10px;
 }
 
-#textbox2{
-	background-color: #F8E0F1;
+.textbox p {
+  float: left;
+  margin-left: 12px;
 }
 
-#textbox3{
-	background-color: #F2F5A9;
+.textbox :hover {
+  color: white;
+}
+#textbox1 {
+  background-color: #045fb4;
+  /*color: white;*/
 }
 
-input{
-	margin-top: 15px;
-	margin-left: 10px;
+#textbox2 {
+  background-color: #f8e0f1;
 }
 
-h1{
-	text-align: center;
+#textbox3 {
+  background-color: #f2f5a9;
 }
 
-#musicli{
-	margin: 5px;
-	display: none;
+input {
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
-#movieli{
-	margin: 5px;
-	display: none;
+h1 {
+  text-align: center;
 }
-#sportsli{
-	margin: 5px;
-	display: none;
+
+#musicli {
+  margin: 5px;
+  display: none;
+}
+
+#movieli {
+  margin: 5px;
+  display: none;
+}
+#sportsli {
+  margin: 5px;
+  display: none;
 }

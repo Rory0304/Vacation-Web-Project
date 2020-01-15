@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{url_for('static',filename='js/myjs.js')}}"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            var id = $('input[name=id]').val();
+            var password = $('input[name=pwd]').val();
+
+
+            $.ajax({
+                url: '/post',
+                data: {id : id, password : password},
+                type: 'POST',
+                success: function(response){
+                    console.log(response);
+                    console.log(response['id']);
+                    console.log(response['password']);
+                    console.log(response['status']);
+                    $('#login_result').append("로그인 성공입니다 :) id는" + response['id'] + "입니다. 그리고 비번은" + response['password'] )
+
+                },
+                error: function(error){
+                    console.log(error);
+                }
+            });
+
+
+          });
+
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+
+    <input type="text" name="id">
+    <input type="password" name="pwd">
+
+    <button>버튼입니다</button>
+
+    <div id="login_result">
+
+    </div>
+
+
+    <div id="new_div">
+        <a href="/get"> 새로운 div 영역입니다.</a>
+    </div>
+
+
+
+</body>
+</html>

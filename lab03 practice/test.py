@@ -1,4 +1,6 @@
+import requests
 from flask import Flask, render_template, request, jsonify
+from bs4 import BeautifulSoup
 
 app = Flask(__name__)
 
@@ -24,5 +26,11 @@ def login():
 
         return jsonify({"status" : "ok"})
 
+@app.route('/get_example')
+def example():
+    req = request.get("hettp://www.naver.com")
+    soup = BeautifulSoup(req.text, "html.parser")
+    print(soup)
+    
 if __name__=='__main__':
     app.run()

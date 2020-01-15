@@ -1,0 +1,23 @@
+#header {
+  background-color: yellow;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+#navigation {
+  text-align: center;
+  padding: 40px 0px;
+  position: sticky;
+  top: 0;
+  background-color: violet;
+}
+
+#content {
+  background-color: green;
+  height: 1000vh;
+}
+footer {
+  text-align: center;
+  padding: 40px 0px;
+  background-color: teal;
+}
