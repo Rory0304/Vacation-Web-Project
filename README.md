@@ -5,7 +5,7 @@
 -----|-----|
 lab01|HTML/CSS 기본|
 lab02|Javascript/jQuery 기본|
-lab03|Flask|
+lab03|Flask |
 lab04|
 lab05|
 lab06|
