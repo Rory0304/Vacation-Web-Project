@@ -9,7 +9,7 @@ def hello_world():
 
 
 @app.route('/about')
-def hello_world2():
+def about_page():
     return render_template("about.html")
 
 
